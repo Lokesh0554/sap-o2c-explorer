@@ -35,7 +35,7 @@ def main():
     st.title("SAP Order-to-Cash Graph Explorer")
 
     st.sidebar.header("Dataset configuration")
-    data_root = st.sidebar.text_input("Dataset root directory", value=".")
+    data_root = st.sidebar.text_input("Dataset root directory", value="sap-o2c-data")
     st.sidebar.caption("Set path where sales_order_headers etc. folders exist")
     load_graph_btn = st.sidebar.button("Load Graph")
 
