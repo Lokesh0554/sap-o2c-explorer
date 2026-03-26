@@ -36,12 +36,11 @@ def main():
 
     st.sidebar.header("Dataset configuration")
     BASE_DIR = Path(__file__).parent
-DEFAULT_DATA_PATH = BASE_DIR / "sap-o2c-data"
+    DEFAULT_DATA_PATH = BASE_DIR / "sap-o2c-data"
 
-data_root = st.sidebar.text_input(
+    data_root = st.sidebar.text_input(
     "Dataset root directory",
-    value=str(DEFAULT_DATA_PATH)
-)
+    value=str(DEFAULT_DATA_PATH))
     st.sidebar.caption("Set path where sales_order_headers etc. folders exist")
     load_graph_btn = st.sidebar.button("Load Graph")
 
